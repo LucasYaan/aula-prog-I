@@ -11,7 +11,7 @@ public class Imagine {
         int totalLikes = 0;
 
         for (int i = 1; i <= numPubs; i++) {
-            System.out.printf("Quantas curtidas essa publicação tem? #%d", 1); // printf e %d
+            System.out.printf("Quantas curtidas a publicação #%d tem? ", 1); // printf e %d
             int likes = entrada.nextInt();
             totalLikes += likes;
                 if (likes >= 100) {
@@ -23,8 +23,8 @@ public class Imagine {
 
         double avgLikes = (double) totalLikes / numPubs;
         System.out.printf("Esta é a média de curtidas das publicações = %.1f\n", avgLikes);
-        System.out.print("Número de publicações = ");
-            
+        System.out.printf("Número de publicações = %d\n", numPubs);
+
         entrada.close();
     }
     
